@@ -1,0 +1,20 @@
+:root{
+  --ink:#0b0c10; --g900:#101116; --g800:#15171d; --g700:#1c1f27; --g600:#262a34; --g500:#343946;
+  --paper:#ece8de; --paper-2:rgba(236,232,222,.68); --paper-3:rgba(236,232,222,.42); --paper-4:rgba(236,232,222,.22);
+  --line:rgba(236,232,222,.10); --line-2:rgba(236,232,222,.20);
+  --violet:#8b7bff; --violet-2:#5d49f0; --violet-soft:rgba(139,123,255,.16);
+  --cyan:#59d8e6; --ok:#35d08f; --warn:#ffb83d; --bad:#ff4d5e;
+  --f-display:'Unbounded','Onest',system-ui,sans-serif;
+  --f-text:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --rail-w:212px; --panel-w:388px; --top-h:84px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--ink);color:var(--paper);font-family:var(--f-text);font-size:13px;line-height:1.45;overflow:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+#app{position:fixed;inset:0;overflow:hidden}
+#stage{position:absolute;inset:0}
+#gl{display:block;width:100%;height:100%;outline:none;touch-action:none}
+#labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+::selection{background:var(--violet);color:#fff}

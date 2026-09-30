@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EV-Option Grid — цифровой двойник ЗИЛ / Даниловский</title>
+<meta name="description" content="Система поддержки инвестиционных решений по развитию сети ЭЗС: транспортный спрос → сеть ЭЗС → ограничения энергосистемы → инвестиционные опции → экономика → последовательный план.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0d11'/%3E%3Cpath d='M16 4l10 6v12l-10 6-10-6V10z' fill='none' stroke='%238b7bff' stroke-width='2'/%3E%3Cpath d='M17 9l-5 8h4l-1 6 5-8h-4z' fill='%23ece8de'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="src/styles/base.css">
+<link rel="stylesheet" href="src/styles/ui.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<div id="app" data-mode="orbit" data-layer="city">
+  <div id="stage"><canvas id="gl"></canvas><div id="labels"></div></div>
+  <div id="ui">
+    <aside id="rail"></aside>
+    <header id="topbar"></header>
+    <div id="chain"></div>
+    <aside id="panel" class="panel-empty"></aside>
+    <div id="dock"></div>
+    <div id="sheet" hidden></div>
+    <div id="hud"></div>
+    <div id="tooltip" hidden></div>
+    <div id="toast" hidden></div>
+    <div id="caption" hidden></div>
+  </div>
+  <div id="boot">
+    <div class="boot-inner">
+      <div class="boot-mark"></div>
+      <div class="boot-title">EV-OPTION GRID</div>
+      <div class="boot-sub">Загрузка цифрового двойника · ЗИЛ / Даниловский район</div>
+      <div class="boot-bar"><i id="bootbar"></i></div>
+      <div class="boot-step" id="bootstep">Инициализация…</div>
+    </div>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

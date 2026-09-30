@@ -1,0 +1,13 @@
+{
+  "name": "ev-option-grid",
+  "version": "0.1.0",
+  "description": "EV-Option Grid — интерактивный 3D digital twin (ЗИЛ / Даниловский, Москва) и система поддержки инвестиционных решений по развитию сети ЭЗС",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "data": "python3 tools/fetch_osm.py && python3 tools/build_data.py"
+  },
+  "license": "UNLICENSED"
+}
